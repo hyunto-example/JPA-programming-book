@@ -232,6 +232,3 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-
-## h2 database files
-h2/*
