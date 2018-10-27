@@ -3,6 +3,7 @@
     <persistence-unit name="jpabook">
 
         <class>jpabook.start.Member</class>
+        <class>jpabook.start.Board</class>
 
         <properties>
 
@@ -17,7 +18,12 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
+            <!--기본 키 생성 전략 사용을 하기 위해 활성화-->
             <property name="hibernate.id.new_generator_mappings" value="true"/>
+            <!--어플리케이션 실행시 테이블 DROP & CREATE-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!--Java Object 필드에 사용된 Camel 표기법을 Database 에서 관례상 사용되는 Underscore 표기법으로 적용-->
+            <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
 
         </properties>
     </persistence-unit>
