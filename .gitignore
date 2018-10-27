@@ -233,3 +233,5 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+## h2 database files
+h2/*
