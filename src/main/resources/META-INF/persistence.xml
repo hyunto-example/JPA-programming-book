@@ -5,6 +5,9 @@
         <class>jpabook.start.Member</class>
         <class>jpabook.start.Board</class>
 
+        <class>jpabook.ch05.Member</class>
+        <class>jpabook.ch05.Team</class>
+
         <properties>
 
             <!--필수 속성-->
